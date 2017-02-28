@@ -1,0 +1,30 @@
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!wp-content/
+
+# Favicons should be included
+!android-chrome-*.png
+!apple-touch-icon-*.png
+!browserconfig.xml
+!favicon.ico
+!favicon-*.png
+!manifest.json
+!mstile-*.png
+!safari-pinned-tab.svg
+
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignore everything in the "plugins" directory, except the plugins you
+wp-content/plugins/*
+!wp-content/plugins/my-plugin-1
+!wp-content/plugins/my-plugin-2
+
+# Ignore everything in the "themes" directory, except the themes you
+wp-content/themes/*
+!wp-content/themes/Avautuminen

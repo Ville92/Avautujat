@@ -1,0 +1,356 @@
+/*
+Theme Name: Avautuminen
+Theme URI: http://users.metropolia.fi
+Author: Ville Aho, Nicholas Leva ja Mikael Hertell
+Author URI: https://metropolia.fi/
+Description: Avautumis sivu mediapalvelut kurssille
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blue
+Text Domain: Avautuminen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #dbdbdb;
+    background: url(./img/bg.jpg);
+    background-size: contain;
+    color: #333;
+}
+
+input {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-weight: 100;
+    border-radius: 1px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 30px 0 10px 0;
+}
+
+h2 {
+    margin: 30px 0 0 0;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+h5 {
+    font-weight: 100;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+a {
+    color: #f66969;
+}
+
+button {
+    cursor: pointer;
+}
+
+.post-categories {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.post-categories a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.main-container {
+
+}
+
+.main-header {
+    width: 100%;
+    float: left;
+    height: 56px;
+    background: #333;
+    position: fixed;
+}
+
+.content-row {
+    float: left;
+    max-width: 62.5em;
+    margin: 60px 6% 80px 6%;
+}
+
+.categories {
+    height: 36px;
+    margin: 10px 0;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.categories a {
+    color: #f66969;
+    text-decoration: none;
+}
+
+.categories ul {
+    margin: 0;
+}
+
+.searchform {
+    width: 400px;
+}
+
+.logo {
+    float: left;
+    height: 50px;
+    margin: 0 0 0 6%;
+}
+
+.logo img {
+    height: 36px;
+    margin: 10px 0;
+}
+
+.search-block {
+    margin: 0 6% 0 0;
+}
+
+.search-block form {
+    float: right;
+}
+
+.search-block button {
+    margin: 10px 0 10px 2%;
+    float: left;
+    font-size: 18px;
+    padding: 5px 10px;
+    height: 36px;
+    border: 0;
+    width: 10%;
+    box-sizing: border-box;
+    color: #ffffff;
+    background: #f66969;
+    border-radius: 1px;
+}
+
+.search-field {
+    height: 36px;
+    padding: 5px 10px;
+    display: block;
+    margin: 10px 0;
+    float: left;
+    width: 88%;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.left-nav li {
+    list-style: none;
+    display: none;
+    background: #333;
+    padding: 5px;
+    border-radius: 1px;
+}
+
+.left-nav li:nth-of-type(1) {
+    display: inline-block;
+    border: 0;
+}
+
+/**************************
+USER SUBMITTED POSTS
+**************************/
+
+.usp-title {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.usp-select {
+    margin: 5px 0;
+    font-size: 16px;
+    background: #f66969;
+    font-weight: 100;
+    color: #ffffff;
+    border: 0;
+    border-radius: 1px;
+    -webkit-appearance: none;
+    padding: 5px;
+    width: 100%;
+}
+
+.usp-title label {
+    display: none;
+}
+
+.usp-input {
+    width: 99%;
+    border: 0;
+    margin: 0;
+    line-height: 16px;
+}
+
+#user-submitted-title {
+    padding: 5px;
+}
+
+.usp-category {
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.usp-category label {
+    display: none;
+}
+
+.usp-content {
+    width: 99%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.usp-content label {
+    display: none;
+}
+
+.usp-content textarea {
+    width: 100%;
+    border: 0;
+    padding: 5px;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 16px;
+    color: inherit;
+    resize: none;
+}
+
+.usp-images {
+    border: 0;
+    padding: 0;
+    background: #ffffff;
+    margin: 0;
+    float: left;
+}
+
+.usp-images label {
+    display: none;
+}
+
+#usp-submit {
+    width: 100%;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+#usp-submit input {
+    float: right;
+    background: #f66969;
+    color: #ffffff;
+    border: 0;
+    border-radius: 1px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#usp-upload-message {
+    float: left;
+    margin-left: 5px;
+    line-height: 36px;
+}
+
+#user-submitted-image {
+    padding: 5px;
+    float: left;
+}
+
+#usp-success-message {
+    margin-top: 40px;
+    background: #f66969;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 1px;
+}
+
+/**************************
+COMMENTS
+**************************/
+.logged-in-as, .comment-author, .comment-form-author, .comment-notes, .comment-form-email, .comment-form-url, .comment-reply-title {
+    display: none;
+}
+
+
+.commenting {
+    margin: 5px 5px 0 0;
+    float: left;
+}
+
+.comment-form-comment label {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#comment {
+    width: 50%;
+    border: 0;
+    resize: none;
+    border-radius: 1px;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.form-submit {
+    width: 50%;
+}
+
+.submit {
+    float: right;
+    background: #f66969;
+    color: #ffffff;
+    border: 0;
+    border-radius: 1px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.wp-post-image {
+    display: block;
+}
+
+footer {
+    float: left;
+    width: 88%;
+    background: #333333;
+    color: #fff;
+    padding: 20px 6%;
+    position: fixed;
+    bottom: 0px;
+}
