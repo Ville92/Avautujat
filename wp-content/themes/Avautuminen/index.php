@@ -6,12 +6,12 @@
         <?php if (function_exists('user_submitted_posts')) user_submitted_posts(); ?>
         <?php if (have_posts()): ?>
             <?php while(have_posts()): ?>
-        
                 <?php the_post(); ?>
                 <h2><?php the_title(); ?></h2>
                 <?php the_content(); ?>
                 <?php comments_template(); ?> 
-                <img class="commenting" src="<?php echo get_template_directory_uri(); ?>/img/kommentti.png" height="16"><a href="<?php echo get_post_permalink( $id, $leavename, $sample ); ?>">Kommentoi</a>
+                <img class="commenting" src="<?php echo get_template_directory_uri(); ?>/img/kommentti.png" height="16"><a href="<?php echo get_post_permalink( $id, $leavename, $sample ); ?>"><?php comments_number( "0 kommenttia", "1 kommentti"); ?></a>
+
             <?php endwhile; ?>
         <?php endif; ?>
     </main>
