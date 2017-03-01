@@ -28,3 +28,5 @@ wp-content/plugins/*
 # Ignore everything in the "themes" directory, except the themes you
 wp-content/themes/*
 !wp-content/themes/Avautuminen
+
+.DS_Store
