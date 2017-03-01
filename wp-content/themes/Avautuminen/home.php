@@ -1,6 +1,7 @@
 <?php /* Template Name: home */ ?>
 
 <?php get_header(); ?>
+
 <div class="content-row">
     <main>
         <h1>avaudu</h1>
@@ -16,11 +17,12 @@
             $uudet_artikkelit = wp_get_recent_posts(array('numberposts' => '100'));
             foreach($uudet_artikkelit as $artikkeli):
         ?>
+        <?php $comments_count = wp_count_comments($artikkeli['ID']); ?>
         <article>
             <h2><?php echo $artikkeli['post_title']; ?></h2>
             <p><?php echo $artikkeli['post_content']; ?></p>
             <?php echo get_the_post_thumbnail($artikkeli['ID'], 'thumbnail'); ?>
-            <img class="commenting" src="<?php echo get_template_directory_uri(); ?>/img/kommentti.png" height="16"><a href="<?php echo get_home_url(); ?>/?p=<?php echo $artikkeli['ID']; ?>">Kommentoi</a>
+            <img class="commenting" src="<?php echo get_template_directory_uri(); ?>/img/kommentti.png" height="16"><a href="<?php echo get_home_url(); ?>/?p=<?php echo $artikkeli['ID']; ?>"><?php echo $comments_count->total_comments; ?> Kommenttia</a>
         </article>
         <?php endforeach; ?>
     </main>
