@@ -9,6 +9,10 @@
         <?php if (function_exists('user_submitted_posts')) user_submitted_posts(); ?>
         <?php if (have_posts()): ?>
             <?php while(have_posts()): ?>
+        <div class="uudet-ja-suositut">
+            <a href="<?php echo get_home_url(); ?>">Uusimmat</a>
+            <a href="<?php echo get_home_url(); ?>/?page_id=187">Suosituimmat</a>
+        </div>
                 <?php the_post(); ?>
                 <?php the_content(); ?>
             <?php endwhile; ?>

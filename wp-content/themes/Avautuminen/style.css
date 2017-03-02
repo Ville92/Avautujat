@@ -173,6 +173,10 @@ button {
     border: 0;
 }
 
+.uudet-ja-suositut {
+    text-align: center;
+}
+
 /**************************
 USER SUBMITTED POSTS
 **************************/
