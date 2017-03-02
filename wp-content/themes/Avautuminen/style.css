@@ -324,6 +324,32 @@ COMMENTS
     padding: 5px;
 }
 
+
+.comment-body p {
+    margin-bottom: 0px;
+}
+
+.comment-meta a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.commentlist {
+    list-style: none;
+    padding: 0;
+}
+
+.commentlist li {
+    list-style: none;
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+
+.children {
+    padding-left: 20px;
+}
+
 .form-submit {
     width: 50%;
 }
