@@ -4,6 +4,15 @@
         <h1><?php the_category(); ?></h1>
         <h5>Ahdistaako? Tekeekö mieli avautua? Älä nolaa itseäsi facebookissa vaan avaudu täällä anonyymisti!</h5>
         <?php if (function_exists('user_submitted_posts')) user_submitted_posts(); ?>
+        <!--Avautumis formin textien vaihto suomeksi-->
+        <script>
+            document.getElementById("user-submitted-post").value = "Avaudu";
+            document.getElementById("user-submitted-title").placeholder = "Otsikko";
+            document.getElementById( 'user-submitted-category' ).getElementsByTagName('option')[0].innerHTML = "Valitse kategoria ↕";
+            document.getElementById("user-submitted-content").placeholder = "Avautuminen";
+            document.getElementById("usp-error-message").innerHTML = "<p style='color:#f66969'>Ole hyvä ja täytä otsikko sekä avautuminen</p>";
+
+        </script>
         <div class="uudet-ja-suositut">
             <a href="<?php echo get_home_url(); ?>">Uusimmat</a>
             <a href="<?php echo get_home_url(); ?>/?page_id=187">Suosituimmat</a>
