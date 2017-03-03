@@ -19,7 +19,7 @@
         <?php if (have_posts()): ?>
             <?php while(have_posts()): ?>
         <div class="uudet-ja-suositut">
-            <a href="<?php echo get_home_url(); ?>">Uusimmat</a>
+            <p>Uusimmat</p>
             <a href="<?php echo get_home_url(); ?>/?page_id=187">Suosituimmat</a>
         </div>
                 <?php the_post(); ?>
