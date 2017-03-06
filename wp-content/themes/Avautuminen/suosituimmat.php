@@ -21,6 +21,7 @@
                 <?php the_content(); ?>
         
         
+        
             <?php endwhile; ?>
         <?php endif; ?>
     </main>
