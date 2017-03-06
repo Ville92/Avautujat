@@ -187,67 +187,25 @@ button {
 }
 
 /**************************
-USER SUBMITTED POSTS
+USER SUBMIT FORM
 **************************/
 
-.usp-title {
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
-
-.usp-select {
-    margin: 5px 0;
-    font-size: 16px;
-    background: #f66969;
-    font-weight: 100;
-    color: #ffffff;
-    border: 0;
-    border-radius: 1px;
-    -webkit-appearance: none;
-    padding: 5px;
+.usf {
+    display: inline-block;
     width: 100%;
 }
 
-.usp-title label {
-    display: none;
-}
 
-.usp-input {
-    width: 99%;
+.usf #title {
+    width: 100%;
     border: 0;
     margin: 0;
     line-height: 16px;
+    margin-bottom: 6px;
 }
 
-#user-submitted-title {
-    padding: 5px;
-}
-
-.usp-category {
-    width: 100%;
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
-
-.usp-category label {
-    display: none;
-}
-
-.usp-content {
+.usf textarea {
     width: 99%;
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
-
-.usp-content label {
-    display: none;
-}
-
-.usp-content textarea {
-    width: 100%;
     border: 0;
     padding: 5px;
     font-family: inherit;
@@ -255,56 +213,49 @@ USER SUBMITTED POSTS
     font-size: 16px;
     color: inherit;
     resize: none;
+    border: 1px solid #ffffff;
 }
 
-.usp-images {
-    border: 0;
-    padding: 0;
-    background: #ffffff;
-    margin: 0;
-    float: left;
-}
-
-.usp-images label {
-    display: none;
-}
-
-#usp-submit {
-    width: 100%;
-    margin-top: 5px;
-    display: inline-block;
-}
-
-#usp-submit input {
+.usf #submit {
     float: right;
     background: #f66969;
     color: #ffffff;
+    display: block;
     border: 0;
     border-radius: 1px;
-    padding: 5px 10px;
+    padding: 16px 25px 13px 25px;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 100;
     cursor: pointer;
+    margin-bottom: 10px;
+    
 }
 
-#usp-upload-message {
-    float: left;
-    margin-left: 5px;
-    line-height: 36px;
+.usf input {
+    line-height: 16px;
 }
 
-#user-submitted-image {
-    padding: 5px;
-    float: left;
-}
-
-#usp-success-message {
-    margin-top: 40px;
-    background: #f66969;
-    padding: 5px;
-    color: #ffffff;
+.usf select {
+    font-size: 16px;
+    font-weight: 100;
+    border: 0;
     border-radius: 1px;
+    -webkit-appearance: none;
+    padding: 5px;
+    width: 100.4%;
+    -webkit-appearance: none;
+    margin-bottom: 10px;
+}
+
+.kuvan-lisays {
+    margin: 5px 0;
+    float: left;
+}
+
+.category {
+    border: none;
+    padding: 0;
 }
 
 /**************************
