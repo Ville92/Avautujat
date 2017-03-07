@@ -349,6 +349,7 @@ footer {
     color: #fff;
     padding: 10px 6%;
     bottom: 0;
+    position: fixed;
 }
 
 /**************************
