@@ -21,7 +21,11 @@
     <div class="categories">
         <?php get_sidebar(); ?>
     </div>
-    <div class="search-block">
+    <div class="search-block-header">
+        <button type="submit" id="searchsubmitmobile" value="Hae"><i class="fi-magnifying-glass large"></i></button>
+    </div>
+    <div class="search-block" id="search-block">
         <?php get_search_form(); ?>
     </div>
+    
 </header>
