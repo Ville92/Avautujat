@@ -71,6 +71,11 @@ button {
     cursor: pointer;
 }
 
+.article-link {
+    color: #333333;
+    text-decoration: none;
+}
+
 .post-categories {
     margin: 0;
     padding: 0;
@@ -370,6 +375,7 @@ COMMENTS
 .wp-post-image {
     max-width: 500px;
     display: block;
+    margin-bottom: 10px;
 }
 
 footer {
