@@ -9,10 +9,11 @@
         <!--SUBMIT POST-->
         <?php include_once("submit-post-form.php");?>
         
-        <div class="uudet-ja-suositut">
-            <a href="<?php echo get_home_url(); ?>">Uusimmat</a>
-            <a href="<?php echo get_home_url(); ?>/?page_id=187">Suosituimmat</a>
-        </div>
+        <h3 class="uudet-ja-suositut">
+            <a href="<?php echo get_home_url(); ?>">&#9679; Uusimmat</a>
+            <a href="<?php echo get_home_url(); ?>/?page_id=187">	
+&#9733; Suosituimmat</a>
+        </h3>
         
         <?php if (have_posts()): ?>
             <?php while(have_posts()): ?>

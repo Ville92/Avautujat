@@ -11,10 +11,11 @@
         
         <?php if (have_posts()): ?>
             <?php while(have_posts()): ?>
-        <div class="uudet-ja-suositut">
-            <p>Uusimmat</p>
-            <a href="<?php echo get_home_url(); ?>/?page_id=187">Suosituimmat</a>
-        </div>
+        <h3 class="uudet-ja-suositut">
+            <p>&#9679; Uusimmat</p>
+            <a href="<?php echo get_home_url(); ?>/?page_id=187">	
+&#9733; Suosituimmat</a>
+        </h3>
                 <?php the_post(); ?>
                 <?php the_content(); ?>
             <?php endwhile; ?>
