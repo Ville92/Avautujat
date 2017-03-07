@@ -370,6 +370,7 @@ COMMENTS
     font-size: 20px;
     font-weight: 100;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 
 .wp-post-image {
