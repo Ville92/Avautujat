@@ -97,7 +97,8 @@ button {
 .content-row {
     float: left;
     max-width: 62.5em;
-    margin: 60px 6% 80px 6%;
+    padding: 60px 6% 80px 6%;
+    width: 88%;
 }
 
 .categories {
@@ -106,6 +107,7 @@ button {
     float: left;
     box-sizing: border-box;
     border-radius: 1px;
+    position: relative;
 }
 
 .categories a {
@@ -192,16 +194,17 @@ USER SUBMIT FORM
 
 .usf {
     display: inline-block;
-    width: 100%;
+    width: 96%;
 }
 
 
 .usf #title {
-    width: 100%;
+    width: 99.2%;
     border: 0;
     margin: 0;
     line-height: 16px;
     margin-bottom: 6px;
+    padding: 5px;
 }
 
 .usf textarea {
@@ -214,6 +217,8 @@ USER SUBMIT FORM
     color: inherit;
     resize: none;
     border: 1px solid #ffffff;
+    -webkit-appearance: none;
+    border-radius: 1px;
 }
 
 .usf #submit {
@@ -229,6 +234,7 @@ USER SUBMIT FORM
     font-weight: 100;
     cursor: pointer;
     margin-bottom: 10px;
+    -webkit-appearance: none;
     
 }
 
@@ -244,8 +250,8 @@ USER SUBMIT FORM
     -webkit-appearance: none;
     padding: 5px;
     width: 100.4%;
-    -webkit-appearance: none;
     margin-bottom: 10px;
+    background: #ffffff;
 }
 
 .kuvan-lisays {
@@ -332,6 +338,7 @@ COMMENTS
 }
 
 .wp-post-image {
+    max-width: 500px;
     display: block;
 }
 
@@ -340,5 +347,87 @@ footer {
     width: 88%;
     background: #333333;
     color: #fff;
-    padding: 20px 6%;
+    padding: 10px 6%;
+    bottom: 0;
+}
+
+/**************************
+COMMENTS
+**************************/
+
+@media screen and (min-width: 641px){
+}
+
+@media screen and (min-width: 641px) and (max-width: 999px){
+
+}
+
+@media screen and (max-width: 640px){
+    h5 {
+        font-size: 16px;
+    }
+    usf {
+        width: 92%;
+    }
+    
+    .kuvan-lisays {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .usf input {
+        width: 100%;
+    }
+    
+    .usf select {
+        width: 102.4%;
+    }
+    
+    .usf #submit {
+        margin-bottom: 40px;
+    }
+    
+    .search-block form {
+        width: 375px;
+        float: none;
+    }
+    
+    .search-field {
+        margin: 0;
+        width: 85%;
+        height: 50px;
+    }
+    
+    .search-block button {
+        margin: 0;
+        width: 15%;
+        height: 50px;
+    }
+    
+    h1 {
+        margin: 60px 0 10px 0;
+    }
+    
+    .wp-post-image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .categories a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+    
+    #comment {
+        width: 97%;
+    }
+    
+    .submit {
+        float: none;
+    }
 }
