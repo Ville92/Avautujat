@@ -7,6 +7,7 @@
     <link href="<?php echo get_template_directory_uri(); ?>/css/fonts/foundation-icons.css" rel="stylesheet">
     <link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet">
     <?php wp_head(); ?>
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
 </head>
 
 <body <?php body_class(); ?>>
