@@ -24,6 +24,10 @@
                 <?php the_post_thumbnail(); ?>
                 <?php comments_template(); ?> 
                 <img class="commenting" src="<?php echo get_template_directory_uri(); ?>/img/kommentti.png" height="16"><a href="<?php echo get_post_permalink( $id, $leavename, $sample ); ?>"><?php comments_number( "0 kommenttia", "1 kommentti"); ?></a>
+
+                <?php echo the_category( $separator, $parents, $artikkeli['ID'] ); ?>
+
+
         </a>
             
             <?php endwhile; ?>

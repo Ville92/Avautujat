@@ -16,7 +16,7 @@
             <a href="<?php echo get_home_url(); ?>">&#9679; Uusimmat</a>
             <p>&#9733; Suosituimmat</p>
         </h3>
-        <?php wpp_get_mostpopular('wpp_start=" "&wpp_end=" "&excerpt_length=100&stats_comments=1&post_type=post&range=all&post_html="<a class=\'article-link\' href=\'{url}\'><article><h2>{text_title}</h2><p>{summary}</p><img src=\'http://users.metropolia.fi/~villa/Avautujat/wp-content/themes/Avautuminen/img/kommentti.png\' height=\'16\' class=\'commenting\'/><a href=\'{url}\'>{comments} Kommenttia</a></article></a>"'); ?>
+        <?php wpp_get_mostpopular('wpp_start=" "&wpp_end=" "&excerpt_length=100&stats_comments=1&post_type=post&range=all&stats_category=1&post_html="<a class=\'article-link\' href=\'{url}\'><article><h2>{text_title}</h2><p>{summary}</p><img src=\'http://users.metropolia.fi/~villa/Avautujat/wp-content/themes/Avautuminen/img/kommentti.png\' height=\'16\' class=\'commenting\'/><a href=\'{url}\'>{comments} Kommenttia</a><p class=\'article-category\'>{category}</p></article></a>"'); ?>
                 <?php the_post(); ?>
                 <?php the_content(); ?>
         </a>
