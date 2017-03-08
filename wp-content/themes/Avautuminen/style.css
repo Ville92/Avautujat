@@ -21,8 +21,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #dbdbdb;
-    background: url(./img/bg.jpg);
-    background-size: contain;
     color: #333;
 }
 
@@ -88,7 +86,10 @@ button {
 }
 
 .main-container {
-
+    position: absolute;
+    width: 100%;
+    background: url(./img/bg.jpg);
+    background-size: contain;
 }
 
 .main-header {
@@ -370,7 +371,6 @@ COMMENTS
     font-size: 20px;
     font-weight: 100;
     cursor: pointer;
-    -webkit-appearance: none;
 }
 
 .wp-post-image {
@@ -386,7 +386,8 @@ footer {
     color: #fff;
     padding: 10px 6%;
     bottom: 0;
-    position: fixed;
+    position: absolute;
+    width: 100%;
 }
 
 /**************************
