@@ -19,7 +19,7 @@
                 <?php the_post(); ?>
         <a class="article-link" href="<?php echo get_post_permalink( $id, $leavename, $sample ); ?>">
                 <h2><?php the_title(); ?></h2>
-                <?php the_content(); ?>
+                <?php the_excerpt(); ?>
                 <?php the_post_thumbnail(); ?>
                 <?php comments_template(); ?> 
                 <img class="commenting" src="<?php echo get_template_directory_uri(); ?>/img/kommentti.png" height="16"><a href="<?php echo get_post_permalink( $id, $leavename, $sample ); ?>"><?php comments_number( "0 kommenttia", "1 kommentti"); ?></a>
