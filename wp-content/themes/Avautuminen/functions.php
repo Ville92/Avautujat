@@ -34,7 +34,7 @@ if (function_exists('register_sidebar')) {
 <?php
 /*AVAUTUMISTEN LYHENNÖS*/
 function wpdocs_custom_excerpt_length( $length ) {
-    return 15;
+    return 14;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
