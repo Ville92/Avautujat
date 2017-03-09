@@ -90,6 +90,7 @@ button {
     background: url(./img/bg.jpg);
     background-size: contain;
     width: 100%;
+    min-height: 100%;
 }
 
 .main-header {
