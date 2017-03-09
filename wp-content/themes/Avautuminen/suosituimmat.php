@@ -4,7 +4,7 @@
 
 <div class="content-row">
     <main>
-        <h1>avaudu</h1>
+        <h1>suosituimmat &#127775;</h1>
         <h5>Ahdistaako? Tekeekö mieli avautua? Älä nolaa itseäsi facebookissa vaan avaudu täällä anonyymisti!</h5>
         
         <!--SUBMIT POST-->
