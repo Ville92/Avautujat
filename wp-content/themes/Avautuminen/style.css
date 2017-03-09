@@ -299,6 +299,11 @@ USER SUBMIT FORM
     padding: 0;
 }
 
+.post-categories a {
+    color: #f66969;
+    text-decoration: underline;
+}
+
 /**************************
 COMMENTS
 **************************/
@@ -388,8 +393,13 @@ footer {
     position: fixed;
 }
 
+.comment-counter {
+    float: left;
+    margin-right: 10px;
+}
+
 /**************************
-COMMENTS
+MOBILE
 **************************/
 
 @media screen and (min-width: 641px){
