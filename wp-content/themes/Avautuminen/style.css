@@ -21,8 +21,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #dbdbdb;
-    background: url(./img/bg.jpg);
-    background-size: contain;
     color: #333;
 }
 
@@ -88,7 +86,10 @@ button {
 }
 
 .main-container {
-
+    position: absolute;
+    background: url(./img/bg.jpg);
+    background-size: contain;
+    width: 100%;
 }
 
 .main-header {
@@ -396,7 +397,7 @@ footer {
     color: #fff;
     padding: 10px 6%;
     bottom: 0;
-    position: fixed;
+    position: absolute;
 }
 
 .comment-counter {
