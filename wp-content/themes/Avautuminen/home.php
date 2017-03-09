@@ -26,10 +26,11 @@
         ?>
         <a class="article-link" href="<?php echo get_home_url(); ?>/?p=<?php echo $artikkeli['ID']; ?>">
         <article>
+            <?php $comments_count = wp_count_comments($artikkeli['ID']); ?>
             <h2><?php echo $artikkeli['post_title']; ?></h2>
             <p><?php echo substr($artikkeli['post_content'],0,102); ?>...</p>
             <?php echo get_the_post_thumbnail($artikkeli['ID'], 'thumbnail'); ?>
-            <img class="commenting" src="<?php echo get_template_directory_uri(); ?>/img/kommentti.png" height="16"><a href="<?php echo get_home_url(); ?>/?p=<?php echo $artikkeli['ID']; ?>">Kommentoi</a>
+            <img class="commenting" src="<?php echo get_template_directory_uri(); ?>/img/kommentti.png" height="16"><a href="<?php echo get_home_url(); ?>/?p=<?php echo $artikkeli['ID']; ?>"><?php echo $comments_count->total_comments; ?> Kommenttia</a>
 
             <?php echo the_category( $separator, $parents, $artikkeli['ID'] ); ?>
 
