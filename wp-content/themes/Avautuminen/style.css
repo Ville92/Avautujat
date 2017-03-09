@@ -304,6 +304,12 @@ USER SUBMIT FORM
     text-decoration: underline;
 }
 
+h1 .post-categories a {
+    color: #333333;
+    text-decoration: none;
+}
+
+
 /**************************
 COMMENTS
 **************************/
