@@ -72,7 +72,7 @@ if( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['action'] )) {
                 'tags_input'    => array($tags),
                 'tax_input'    => array( $type),
                 'comment_status' => 'open',
-                'post_author' => '2',
+                'post_author' => '1'
         );
         $new_post = wp_insert_post($post);
                 
